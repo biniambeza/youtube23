@@ -3,8 +3,10 @@
   justify-content: center;
 
   .container {
-    width: 1400px;
-    padding: 50px 0px;
+    width: 100%;
+    max-width: 1400px;
+    padding: 50px 20px;
+    box-sizing: border-box;
 
     h1 {
       width: max-content;
@@ -16,7 +18,11 @@
     .sections {
       display: flex;
       justify-content: space-between;
-      gap: 100px;
+      gap: clamp(30px, 5vw, 100px);
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
 
       label {
         color: gray;

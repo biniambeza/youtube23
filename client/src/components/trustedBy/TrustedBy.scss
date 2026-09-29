@@ -1,13 +1,19 @@
 .trustedBy {
   background-color: #fafafa;
-  height: 100px;
+  min-height: 100px;
+  height: auto;
+  padding: 15px 0px;
   display: flex;
   justify-content: center;
 
   .container {
+    width: 100%;
     max-width: 760px;
+    padding: 0 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
     color: rgb(200, 200, 200);
     font-weight: 500;

@@ -1,6 +1,20 @@
-* {
-  .link {
-    text-decoration: none;
-    color: inherit;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+.app {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
 }

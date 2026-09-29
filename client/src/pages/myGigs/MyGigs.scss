@@ -4,8 +4,11 @@
   color: #555;
 
   .container {
-    width: 1400px;
-    padding: 50px 0px;
+    width: 100%;
+    max-width: 1400px;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    overflow-x: auto;
 
     .title {
       display: flex;

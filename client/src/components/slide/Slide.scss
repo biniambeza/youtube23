@@ -2,10 +2,14 @@
   display: flex;
   justify-content: center;
   padding: 100px 0px;
+  width: 100%;
   
   .container {
-    width: 1400px;
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 30px;
     position: relative;
+    box-sizing: border-box;
   }
 
   .carousel-initialized {
@@ -22,9 +26,15 @@
     top: 0;
     bottom: 0;
     margin: auto;
+    z-index: 10;
+    cursor: pointer;
   }
 
   .carousel-prev {
-    left: -25px;
+    left: 5px;
+  }
+
+  .carousel-next {
+    right: 5px;
   }
 }

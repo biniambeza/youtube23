@@ -10,10 +10,16 @@
   }
 
   .container {
-    width: 1400px;
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 20px;
+    box-sizing: border-box;
+
     .top {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
       .item {
         display: flex;
         flex-direction: column;
@@ -37,6 +43,8 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
 
       .left {
         width: max-content;

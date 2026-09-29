@@ -6,11 +6,17 @@
   color: white;
 
   .container {
-    width: 1400px;
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 20px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 30px;
 
     .left {
+      flex: 1;
+      max-width: 650px;
       display: flex;
       flex-direction: column;
       gap: 30px;
@@ -86,9 +92,16 @@
 
     .right {
       height: 100%;
+      display: flex;
+      align-items: flex-end;
       img {
         height: 100%;
+        max-width: 100%;
         object-fit: contain;
+      }
+
+      @media (max-width: 900px) {
+        display: none;
       }
     }
   }
